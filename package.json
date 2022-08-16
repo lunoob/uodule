@@ -1,0 +1,27 @@
+{
+  "name": "normal_module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "utils.js",
+  "exports": {
+    "require": "./utils.js",
+    "default": "./esm/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "es": "tsc",
+    "build": "rollup -c",
+    "generate": "npm run es && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.4",
+    "rollup": "^2.78.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
