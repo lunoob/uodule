@@ -6,7 +6,7 @@ import { defineConfig } from 'rollup'
 
 const publicConfig = {
     format: 'umd',
-    name: 'utils'
+    name: 'uodule'
 }
 
 const config = defineConfig([
