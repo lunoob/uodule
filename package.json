@@ -1,6 +1,6 @@
 {
   "name": "uodule",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "types": "index.d.ts",
@@ -24,7 +24,7 @@
     "build": "rollup -c",
     "generate": "npm run clean && npm run es && npm run build",
     "clean": "rimraf index.*",
-    "prepublishOnly": "npm run clean"
+    "prepublishOnly": "npm run generate"
   },
   "keywords": [
     "test",
