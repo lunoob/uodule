@@ -1,6 +1,6 @@
 {
   "name": "uodule",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "types": "index.d.ts",
@@ -23,13 +23,17 @@
     "es": "tsc",
     "build": "rollup -c",
     "generate": "npm run clean && npm run es && npm run build",
-    "clean": "rimraf index.*"
+    "clean": "rimraf index.*",
+    "prepublishOnly": "npm run clean"
   },
   "keywords": [
     "test",
     "module",
     "uodule"
   ],
+  "repository": {
+    "url": "https://github.com/lunoob/uodule"
+  },
   "author": "luoob",
   "license": "MIT",
   "devDependencies": {
