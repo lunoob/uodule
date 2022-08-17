@@ -1,6 +1,6 @@
 {
   "name": "uodule",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "types": "index.d.ts",
@@ -22,13 +22,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "es": "tsc",
     "build": "rollup -c",
-    "generate": "npm run es && npm run build"
+    "generate": "npm run clean && npm run es && npm run build",
+    "clean": "rimraf index.*"
   },
-  "keywords": ["test", "module", "uodule"],
+  "keywords": [
+    "test",
+    "module",
+    "uodule"
+  ],
   "author": "luoob",
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.4",
+    "rimraf": "^3.0.2",
     "rollup": "^2.78.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-dts": "^4.2.2",
