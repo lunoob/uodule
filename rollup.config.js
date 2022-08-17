@@ -13,12 +13,22 @@ const config = defineConfig([
     {
         input: 'src/index.ts',
         output: [
-            { file: 'index.js', ...publicConfig },
-            { file: 'index.min.js', ...publicConfig, plugins: [terser()] }
+            {
+                file: 'index.js',
+                ...publicConfig
+            },
+            {
+                file: 'index.min.js',
+                ...publicConfig,
+                plugins: [
+                    terser()
+                ]
+            }
         ],
         plugins: [
             typescript({
-                declaration: false
+                declaration: false,
+                target: "ES5"
             })
         ]
     },
